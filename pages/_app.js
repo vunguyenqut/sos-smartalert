@@ -21,7 +21,7 @@ function Application({ Component, pageProps }) {
 }, []); // <-- run this effect once on mount
   
   
-  return <Component {...pageProps} />
+  //return <Component {...pageProps} />
 }
 
 export default Application
