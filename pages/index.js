@@ -1,6 +1,27 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import React, { useEffect, useState } from "react";
+
+export default function Home() {
+  const [resultApi, setResultApi] = useState();
+  useEffect(() => {
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function () {
+      OneSignal.init({
+        appId: "75ff99fa-9290-49fc-9e58-272d1814433b",
+        notifyButton: {
+          enable: true,
+        },
+
+        allowLocalhostAsSecureOrigin: true,
+      });
+    });
+    return () => {
+      window.OneSignal = undefined;
+    };
+  }, []);
+  
 
 export default function Home() {
   return (
