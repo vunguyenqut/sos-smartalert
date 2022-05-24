@@ -8,6 +8,9 @@ export default function Home() {
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
+      <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""> </script>
+    
+    
       </Head>
 
       <main>
