@@ -1,6 +1,11 @@
 import '@styles/globals.css'
 
 
+
+
+
+    
+function Application({ Component, pageProps }) {
 useEffect(() => {
     window.OneSignal = window.OneSignal || [];
     OneSignal.push(function () {
@@ -18,10 +23,11 @@ useEffect(() => {
         window.OneSignal = undefined;
     };
 }, []); // <-- run this effect once on mount
-
-
-function Application({ Component, pageProps }) {
-  return <Component {...pageProps} />
 }
+
+
+//function Application({ Component, pageProps }) {
+//  return <Component {...pageProps} />
+//}
 
 export default Application
