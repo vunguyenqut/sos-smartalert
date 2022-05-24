@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 
     
-function Application({ Component, pageProps }) {
+function Application() {
 useEffect(() => {
     window.OneSignal = window.OneSignal || [];
     OneSignal.push(function () {
