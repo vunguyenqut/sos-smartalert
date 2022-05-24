@@ -3,7 +3,13 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import React, { useEffect, useState } from "react";
 
+//export default function Home() {
+
+//  }, []);
+  
+
 export default function Home() {
+  
   const [resultApi, setResultApi] = useState();
   useEffect(() => {
     window.OneSignal = window.OneSignal || [];
@@ -20,10 +26,7 @@ export default function Home() {
     return () => {
       window.OneSignal = undefined;
     };
-  }, []);
   
-
-export default function Home() {
   return (
     <div className="container">
       <Head>
