@@ -2,10 +2,6 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import React, { useEffect, useState } from "react";
-
-//export default function Home() {
-
-//  }, []);
   
 
 export default function Home() {
@@ -23,9 +19,9 @@ useEffect(() => {
       allowLocalhostAsSecureOrigin: true,
     });
   });
-  return () => {
-    window.OneSignal = undefined;
-  };
+//  return () => {
+//    window.OneSignal = undefined;
+//  };
   
   return (
     <div className="container">
@@ -46,5 +42,7 @@ useEffect(() => {
 
       <Footer />
     </div>
-  )
-}, []);
+  ) => {
+    window.OneSignal = undefined;
+      };
+}
