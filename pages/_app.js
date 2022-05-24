@@ -8,7 +8,7 @@ useEffect(() => {
     window.OneSignal = window.OneSignal || [];
     OneSignal.push(function () {
         OneSignal.init({
-            appId: "b40b7cc7-13dc-4662-8b48-efa668f9b72a",
+            appId: "75ff99fa-9290-49fc-9e58-272d1814433b",
             notifyButton: {
                 enable: true,
             },
@@ -27,5 +27,7 @@ useEffect(() => {
 //function Application({ Component, pageProps }) {
 //  return <Component {...pageProps} />
 //}
+
+//75ff99fa-9290-49fc-9e58-272d1814433b
 
 export default Application
