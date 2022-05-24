@@ -1,7 +1,6 @@
 export default function Header({ title }) {
-  return <h1 className="title">{title}</h1>
-  
-  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<h1 className="title">{title}</h1>  
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
   window.OneSignal = window.OneSignal || [];
   OneSignal.push(function() {
